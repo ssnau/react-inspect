@@ -1,10 +1,38 @@
 $primary-color:  olive;
+$button-size: 5px;
 
-.react-react-console {
-  color: $primary-color;
-  display: flex;
+.react-console {
+  font-family: Consolas, 'Liberation Mono', Menlo, Monaco, Courier, monospace;
+  font-size: 13px;
   h1 {
     font-size: 20px;
   }
+  .object-button {
+    cursor: pointer;
+    padding-right: 10px;
+    &.in-pair {
+      margin-left: -12px;
+      padding-right: 5px;
+      position: absolute;
+    }
+  }
+  .object-ul {
+    list-style: none;
+    padding-left: 20px;
+  }
 }
-
+.unit-string {
+  color: #008B8B;
+}
+.unit-number {
+  color: #800;
+}
+.unit-function {
+  font-style: italic;
+}
+.unit-key {
+  color: #080;
+}
+.unit-object-key {
+  cursor: pointer;
+}

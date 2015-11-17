@@ -72,10 +72,6 @@ gulp.task('compile', ['copy', 'copy_assets', 'babel', 'css', 'build']);
 
 gulp.task('publish', ['compile'], function (done) {
   var npm = 'npm ';
-  <#$$ mnpm $$>
-  // have to include $HOME path
-  npm = 'npm --registry=http://r.npm.sankuai.com --cache=$HOME/.npm/.cache/mnpm --userconfig=$HOME/.mnpmrc ';
-  </$$ mnpm $$>
   shelljs.exec(npm + ' publish', function () {
     clean();
     done();

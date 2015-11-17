@@ -1,9 +1,9 @@
 {
-  "name": "react-react-console",
+  "name": "react-inspect",
   "version": "0.1.0",
-  "description": "a simple ui component",
+  "description": "",
   "author": {
-    "name": "korige",
+    "name": "ssnau",
     "email": "korige@gmail.com"
   },
   "keywords": [
