@@ -79,15 +79,14 @@ gulp.task('publish', ['compile'], function (done) {
 });
 
 gulp.task('server', function () {
-  rtCore.server({
+  return rtCore.server({
     dir: 'examples',
     host: 'http://localhost',
     port: 3001
   });
-  return;
 });
 
-gulp.task('build', ['css'] , function() { rtCore.build({}); });
+gulp.task('build', ['css'] , function() { return rtCore.build({}); });
 
 gulp.task('start', ['server', 'css', 'css:watch']);
 
