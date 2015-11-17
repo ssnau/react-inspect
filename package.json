@@ -1,0 +1,53 @@
+{
+  "name": "react-react-console",
+  "version": "0.1.0",
+  "description": "a simple ui component",
+  "author": {
+    "name": "korige",
+    "email": "korige@gmail.com"
+  },
+  "keywords": [
+    "react",
+    "mt-component",
+    "react-component"
+  ],
+  "files": [
+    "lib",
+    "src",
+    "build",
+    "assets/*.css"
+  ],
+  "main": "./lib/index",
+  "scripts": {
+    "test": "NODE_ENV=production mocha -r test.setup.js --compilers js:babel/register",
+    "start": "gulp start",
+    "pub": "NODE_ENV=production gulp pub",
+    "npmpub": "NODE_ENV=production gulp pub --raw"
+  },
+  "style": "assets/index.css",
+  "devDependencies": {
+    "rt-core": "^0.3.0",
+    "babel": "^5.8.23",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.0",
+    "through2": "^2.0.0",
+    "gulp-postcss": "^6.0.0",
+    "autoprefixer-core": "^5.2.1",
+    "stream-combiner2": "^1.0.2",
+    "precss": "^1.2.3",
+    "gulp-rename": "^1.2.2",
+    "jsdom": "^6.1.0",
+    "mocha": "^2.2.5",
+    "react": "0.14.x",
+    "react-dom": "0.14.x",
+    "react-addons-test-utils": "^0.14.0",
+    "babel-plugin-react-transform": "^1.1.1",
+    "react-transform-catch-errors": "^1.0.0",
+    "react-transform-hmr": "^1.0.1",
+    "redbox-react": "^1.1.1",
+    "shelljs": "^0.5.3",
+    "bootstrap": "^3.3.5",
+    "sinon": "^1.15.4"
+  },
+  "license": "MIT"
+}
