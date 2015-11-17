@@ -1,7 +1,7 @@
 {
   "name": "react-inspect",
   "version": "0.1.4",
-  "description": "",
+  "description": "inspect an object in a visual way",
   "author": {
     "name": "ssnau",
     "email": "korige@gmail.com"
@@ -9,6 +9,8 @@
   "keywords": [
     "react",
     "mt-component",
+    "inspect",
+    "console",
     "react-component"
   ],
   "files": [
